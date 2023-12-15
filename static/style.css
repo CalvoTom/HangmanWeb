@@ -1,0 +1,52 @@
+.information {
+  color: rgb(138, 138, 138);
+  margin: 0px auto 0px auto;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.wordToFind {
+  background-color: #39B8F8;
+  border: none;
+  color: white;
+  padding: 55px 140px;
+  margin: 80px auto -135px auto;
+  text-align: center;
+  font-size: 40px;
+  border-radius: 10px;
+  width: 300px;
+  height: 160px;
+}
+
+.input {
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+}
+
+.Forms{
+  line-height: 1;
+  padding: 0 1em;
+  background-color: #fff;
+  border: 2px solid silver;
+  width: 300px;
+  height: 35px;
+  border-radius: 30px;
+  }
+  
+.Button {
+  background-color: #39B8F8;
+  border:2px solid whitesmoke;
+  color: white;
+  padding: 10px 140px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 30px;
+}
+
+.Button:hover {
+    background-color: #0794DC;
+}
