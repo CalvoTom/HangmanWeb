@@ -1,6 +1,6 @@
 .information {
-  color: rgb(138, 138, 138);
-  margin: 0px auto 0px auto;
+  color: whitesmoke;
+  margin: 100px 500px -130px -25px;
   text-align: center;
   font-weight: bold;
   font-size: 30px;
@@ -17,6 +17,7 @@
   border-radius: 10px;
   width: 300px;
   height: 160px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .input {
@@ -45,8 +46,145 @@
   text-align: center;
   font-size: 16px;
   border-radius: 30px;
+  transition: all 0.4s;
 }
 
 .Button:hover {
     background-color: #0794DC;
 }
+
+.inputBlock {
+  margin-top: 450px;
+}
+
+.header {
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+
+.header a.title {
+  font-size: 25px;
+  font-weight: bold;
+  transition: all 0.4s;
+}
+
+.header a:hover {
+  background-color: #39B8F8;
+  color: whitesmoke;
+}
+
+.header-right {
+  float: right;
+}
+
+#barHorizontal {
+  background-color: #000000;
+  width: 200px;
+  height: 10px;
+  top: 436px;
+  left: 432px;
+  position: absolute;
+}
+
+#barVertical {
+  background-color: #000000;
+    width: 10px;
+    height: 300px;
+    top: 136px;
+    left: 576px;
+    position: absolute;
+}
+
+#highBarHorizontal {
+  background-color: #000000;
+  width: 200px;
+  height: 10px;
+  top: 126px;
+  left: 432px;
+  position: absolute;
+}
+
+#hightBarVertical {
+  background-color: #000000;
+  width: 10px;
+  height: 50px;
+  top: 135px;
+  left: 492px;
+  position: absolute;
+}
+
+#circle {
+  height: 50px;
+  width: 50px;
+  background-color: #000000;
+  border-radius: 50%;
+  display: inline-block;
+  top: 182px;
+  left: 472px;
+  position: absolute;
+}
+
+#body {
+  background-color: #000000;
+  width: 10px;
+  height: 70px;
+  top: 230px;
+  left: 492px;
+  position: absolute;
+}
+
+#armLeft {
+  background-color: #000000;
+  width: 10px;
+  height: 55px;
+  top: 163px;
+  left: 541px;
+  position: absolute;
+  transform: rotate(35deg) translate(-10px, 100px);
+}
+
+#armRight {
+  background-color: #000000;
+  width: 10px;
+  height: 55px;
+  top: 152px;
+  left: 460px;
+  position: absolute;
+  transform: rotate(-35deg) translate(-10px, 100px);
+}
+
+#legLeft {
+  background-color: #000000;
+  width: 10px;
+  height: 60px;
+  top: 213px;
+  left: 541px;
+  position: absolute;
+  transform: rotate(35deg) translate(-10px, 100px);
+}
+
+#legRight {
+  background-color: #000000;
+  width: 10px;
+  height: 60px;
+  top: 202px;
+  left: 460px;
+  position: absolute;
+  transform: rotate(-35deg) translate(-10px, 100px);
+}
+

@@ -1,0 +1,89 @@
+{{define "hangman"}}
+{{if eq .Attempts 9}}
+<div class="state1">
+    <div class="barHorizontal"></div>
+</div>
+{{else if eq .Attempts 8}}
+<div class="state1">
+    <div class="barHorizontal"></div>
+    <div class="barVertical"></div>
+</div>
+{{else if eq .Attempts 7}}
+<div class="state1">
+    <div class="barHorizontal"></div>
+    <div class="barVertical"></div>
+    <div class="highBarHorizontal"></div>
+</div>
+{{else if eq .Attempts 6}}
+<div class="state1">
+    <div class="barHorizontal"></div>
+    <div class="barVertical"></div>
+    <div class="highBarHorizontal"></div>
+    <div class="hightBarVertical"></div>
+</div>
+{{else if eq .Attempts 5}}
+<div class="state1">
+    <div class="barHorizontal"></div>
+    <div class="barVertical"></div>
+    <div class="highBarHorizontal"></div>
+    <div class="hightBarVertical"></div>
+    <div class="circle"></div>
+</div>
+{{else if eq .Attempts 4}}
+<div class="state1">
+    <div class="barHorizontal"></div>
+    <div class="barVertical"></div>
+    <div class="highBarHorizontal"></div>
+    <div class="hightBarVertical"></div>
+    <div class="circle"></div>
+    <div class="body"></div>
+</div>
+{{else if eq .Attempts 3}}
+<div class="state1">
+    <div class="barHorizontal"></div>
+    <div class="barVertical"></div>
+    <div class="highBarHorizontal"></div>
+    <div class="hightBarVertical"></div>
+    <div class="circle"></div>
+    <div class="body"></div>
+    <div class="armLeft"></div>
+</div>
+{{else if eq .Attempts 2}}
+<div class="state1">
+    <div class="barHorizontal"></div>
+    <div class="barVertical"></div>
+    <div class="highBarHorizontal"></div>
+    <div class="hightBarVertical"></div>
+    <div class="circle"></div>
+    <div class="body"></div>
+    <div class="armLeft"></div>
+    <div class="armRight"></div>
+</div>
+{{else if eq .Attempts 1}}
+<div class="state1">
+    <div class="barHorizontal"></div>
+    <div class="barVertical"></div>
+    <div class="highBarHorizontal"></div>
+    <div class="hightBarVertical"></div>
+    <div class="circle"></div>
+    <div class="body"></div>
+    <div class="armLeft"></div>
+    <div class="armRight"></div>
+    <div class="legLeft"></div>
+</div>
+{{else if eq .Attempts 0}}
+<div class="state1">
+    <div id="barHorizontal" class="draw"></div>
+    <div id="barVertical" class="draw"></div>
+    <div id="highBarHorizontal" class="draw"></div>
+    <div id="hightBarVertical" class="draw"></div>
+    <div id="circle" class="draw"></div>
+    <div id="body" class="draw"></div>
+    <div id="armLeft" class="draw"></div>
+    <div id="armRight" class="draw"></div>
+    <div id="legLeft" class="draw"></div>
+    <div id="legRight" class="draw"></div>
+</div>
+{{else}}
+{{end}}
+{{end}}
