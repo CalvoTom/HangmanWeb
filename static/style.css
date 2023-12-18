@@ -54,7 +54,7 @@
 }
 
 .inputBlock {
-  margin-top: 450px;
+  margin-top: -60px;
 }
 
 .header {
@@ -92,99 +92,68 @@
   float: right;
 }
 
-#barHorizontal {
-  background-color: #000000;
-  width: 200px;
-  height: 10px;
-  top: 436px;
-  left: 432px;
-  position: absolute;
+.pendue {
+  display: grid;
+  grid-template-columns: repeat(40, 1fr);
+  grid-template-rows: repeat(40, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  width: 500px;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-#barVertical {
-  background-color: #000000;
-    width: 10px;
-    height: 300px;
-    top: 136px;
-    left: 576px;
-    position: absolute;
+  
+.div1 { 
+  grid-area: 36 / 11 / 37 / 32; 
+  background-color: black;
 }
-
-#highBarHorizontal {
-  background-color: #000000;
-  width: 200px;
-  height: 10px;
-  top: 126px;
-  left: 432px;
-  position: absolute;
+.div2 { 
+  grid-area: 5 / 26 / 36 / 27; 
+  background-color: black;
 }
-
-#hightBarVertical {
-  background-color: #000000;
-  width: 10px;
-  height: 50px;
-  top: 135px;
-  left: 492px;
-  position: absolute;
+.div3 { 
+  grid-area: 4 / 11 / 5 / 32; 
+  border: 2px solid rgb(0, 0, 0);
+  background-color: black;
 }
-
-#circle {
-  height: 50px;
-  width: 50px;
-  background-color: #000000;
-  border-radius: 50%;
-  display: inline-block;
-  top: 182px;
-  left: 472px;
-  position: absolute;
+.div4 { 
+  grid-area: 5 / 19 / 11 / 20; 
+  border: 2px solid rgb(0, 0, 0);
+  background-color: black;
 }
-
-#body {
-  background-color: #000000;
-  width: 10px;
-  height: 70px;
-  top: 230px;
-  left: 492px;
-  position: absolute;
+.div5 { 
+  grid-area: 10 / 17 / 16 / 22; 
+  border: 2px solid rgb(0, 0, 0);
+  background-color: black;
+  border-radius: 100%;
 }
-
-#armLeft {
-  background-color: #000000;
-  width: 10px;
-  height: 55px;
-  top: 163px;
-  left: 541px;
-  position: absolute;
-  transform: rotate(35deg) translate(-10px, 100px);
+.div6 { 
+  grid-area: 15 / 19 / 24 / 20; 
+  border: 2px solid rgb(0, 0, 0);
+  background-color: black;
 }
-
-#armRight {
-  background-color: #000000;
-  width: 10px;
-  height: 55px;
-  top: 152px;
-  left: 460px;
-  position: absolute;
-  transform: rotate(-35deg) translate(-10px, 100px);
+.div7 { 
+  grid-area: 30 / 18 / 23 / 17; 
+  border: 2px solid rgb(0, 0, 0);
+  background-color: black;
+  transform: rotate(35deg);
 }
-
-#legLeft {
-  background-color: #000000;
-  width: 10px;
-  height: 60px;
-  top: 213px;
-  left: 541px;
-  position: absolute;
-  transform: rotate(35deg) translate(-10px, 100px);
+.div8 { 
+  grid-area: 30 / 21 / 23 / 21; 
+  border: 2px solid rgb(0, 0, 0);
+  background-color: black;
+  transform: rotate(-35deg);
 }
-
-#legRight {
-  background-color: #000000;
-  width: 10px;
-  height: 60px;
-  top: 202px;
-  left: 460px;
-  position: absolute;
-  transform: rotate(-35deg) translate(-10px, 100px);
+.div9 { 
+  grid-area: 19 / 19 / 20 / 24; 
+  border: 2px solid rgb(0, 0, 0);
+  background-color: black;
+  transform: rotate(35deg);
 }
-
+.div10 { 
+  grid-area: 20 / 15 / 19 / 20; 
+  border: 2px solid rgb(0, 0, 0);
+  background-color: black;
+  transform: rotate(-35deg);
+}
