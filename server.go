@@ -8,8 +8,7 @@ import (
 )
 
 func main() {
-	var H *hangman.HangManData
-	H = hangman.InitialiseStruc("words.txt")
+	H := hangman.InitialiseStruc("words.txt")
 
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		hangmanweb.Home(w, r, H)

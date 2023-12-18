@@ -1,7 +1,6 @@
 package hangmanweb
 
 import (
-	"fmt"
 	"log"
 	"net/http"
 
@@ -21,6 +20,6 @@ func Formulaire(w http.ResponseWriter, r *http.Request, H *hangman.HangManData) 
 		http.Redirect(w, r, "http://localhost:8080", http.StatusFound)
 
 	default:
-		fmt.Fprintf(w, "Only POST")
+		log.Fatal("Only POST")
 	}
 }

@@ -1,6 +1,6 @@
 .information {
-  color: rgb(138, 138, 138);
-  margin: 0px auto 0px auto;
+  color: whitesmoke;
+  margin: 100px 500px -130px -25px;
   text-align: center;
   font-weight: bold;
   font-size: 30px;
@@ -17,6 +17,7 @@
   border-radius: 10px;
   width: 300px;
   height: 160px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .input {
@@ -45,8 +46,114 @@
   text-align: center;
   font-size: 16px;
   border-radius: 30px;
+  transition: all 0.4s;
 }
 
 .Button:hover {
     background-color: #0794DC;
+}
+
+.inputBlock {
+  margin-top: -60px;
+}
+
+.header {
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+
+.header a.title {
+  font-size: 25px;
+  font-weight: bold;
+  transition: all 0.4s;
+}
+
+.header a:hover {
+  background-color: #39B8F8;
+  color: whitesmoke;
+}
+
+.header-right {
+  float: right;
+}
+
+.pendue {
+  display: grid;
+  grid-template-columns: repeat(40, 1fr);
+  grid-template-rows: repeat(40, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  width: 500px;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+  
+.div1 { 
+  grid-area: 36 / 11 / 37 / 32; 
+  background-color: black;
+}
+.div2 { 
+  grid-area: 5 / 26 / 36 / 27; 
+  background-color: black;
+}
+.div3 { 
+  grid-area: 4 / 11 / 5 / 32; 
+  border: 2px solid rgb(0, 0, 0);
+  background-color: black;
+}
+.div4 { 
+  grid-area: 5 / 19 / 11 / 20; 
+  border: 2px solid rgb(0, 0, 0);
+  background-color: black;
+}
+.div5 { 
+  grid-area: 10 / 17 / 16 / 22; 
+  border: 2px solid rgb(0, 0, 0);
+  background-color: black;
+  border-radius: 100%;
+}
+.div6 { 
+  grid-area: 15 / 19 / 24 / 20; 
+  border: 2px solid rgb(0, 0, 0);
+  background-color: black;
+}
+.div7 { 
+  grid-area: 30 / 18 / 23 / 17; 
+  border: 2px solid rgb(0, 0, 0);
+  background-color: black;
+  transform: rotate(35deg);
+}
+.div8 { 
+  grid-area: 30 / 21 / 23 / 21; 
+  border: 2px solid rgb(0, 0, 0);
+  background-color: black;
+  transform: rotate(-35deg);
+}
+.div9 { 
+  grid-area: 19 / 19 / 20 / 24; 
+  border: 2px solid rgb(0, 0, 0);
+  background-color: black;
+  transform: rotate(35deg);
+}
+.div10 { 
+  grid-area: 20 / 15 / 19 / 20; 
+  border: 2px solid rgb(0, 0, 0);
+  background-color: black;
+  transform: rotate(-35deg);
 }

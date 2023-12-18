@@ -9,7 +9,7 @@ import (
 )
 
 func Home(w http.ResponseWriter, r *http.Request, H *hangman.HangManData) {
-	template, err := template.ParseFiles("./index.html", "./templates/wordToFind.html")
+	template, err := template.ParseFiles("./index.html", "./templates/wordToFind.html", "./templates/information.html", "./templates/hangman.html")
 	if err != nil {
 		log.Fatal(err)
 	}
