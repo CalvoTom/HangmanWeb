@@ -8,13 +8,24 @@ import (
 )
 
 func main() {
-	H := hangman.InitialiseStruc("words.txt")
+	Heasy := hangman.InitialiseStruc("words.txt")
+	Hmedium := hangman.InitialiseStruc("words2.txt")
+	Hhard := hangman.InitialiseStruc("words3.txt")
 
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		hangmanweb.Home(w, r, H)
+		hangmanweb.Home(w, r)
 	})
 	http.HandleFunc("/hangman", func(w http.ResponseWriter, r *http.Request) {
-		hangmanweb.Formulaire(w, r, H)
+		hangmanweb.Formulaire(w, r, Heasy, Hmedium, Hhard)
+	})
+	http.HandleFunc("/easy", func(w http.ResponseWriter, r *http.Request) {
+		hangmanweb.Easy(w, r, Heasy)
+	})
+	http.HandleFunc("/medium", func(w http.ResponseWriter, r *http.Request) {
+		hangmanweb.Medium(w, r, Hmedium)
+	})
+	http.HandleFunc("/hard", func(w http.ResponseWriter, r *http.Request) {
+		hangmanweb.Hard(w, r, Hhard)
 	})
 
 	fs := http.FileServer(http.Dir("static/"))
