@@ -1,0 +1,18 @@
+{{define "scoreboard"}}
+<table id="scoreboard">
+    <thead>
+        <tr>
+            <th class="tableTitle">Username</th>
+            <th class="tableTitle">Points</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{range .}}
+        <tr>
+            <td class="contentUsername">{{.Username}}</td>
+            <td class="contentPoints">{{.Points}}</td>
+        </tr>
+        {{end}}
+    </tbody>
+</table>
+{{end}}
