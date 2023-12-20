@@ -17,7 +17,6 @@
   border-radius: 10px;
   width: 300px;
   height: 160px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .input {
@@ -34,7 +33,7 @@
   width: 300px;
   height: 35px;
   border-radius: 30px;
-  }
+}
   
 .Button {
   background-color: #39B8F8;
@@ -49,6 +48,21 @@
   transition: all 0.4s;
 }
 
+.ButtonConnect {
+  background-color: #39B8F8;
+  border:2px solid whitesmoke;
+  color: white;
+  padding: 10px 140px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 30px;
+  transition: all 0.4s;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .Button:hover {
     background-color: #0794DC;
 }
@@ -57,12 +71,15 @@
   margin-top: -60px;
 }
 
+.connectBlock {
+  margin-top: 150px;
+}
+
 .header {
   background-color: #f1f1f1;
   padding: 20px 10px;
   border-radius: 10px;
   overflow: hidden;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .header a {
@@ -156,4 +173,32 @@
   border: 2px solid rgb(0, 0, 0);
   background-color: black;
   transform: rotate(-35deg);
+}
+
+.tableTitle {
+  color: whitesmoke; 
+  background-color : #39B8F8; 
+  font-size: 30px;
+  padding: 10px;
+  padding-right: 60px;
+}
+
+.contentDark { 
+  background-color : #CED4E5;
+  padding: 5px;
+}
+
+.contentWhite  { 
+  background-color : #E8EBF5;
+  padding: 5px;
+}
+
+#scoreboard{
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+*{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
