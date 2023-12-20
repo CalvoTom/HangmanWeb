@@ -23,8 +23,9 @@ func Open() []Scoreboard {
 	var data []Scoreboard
 	for _, record := range records {
 		username := record[0]
-		points, _ := strconv.Atoi(record[1])
-		data = append(data, Scoreboard{Username: username, Points: points})
+		category := record[1]
+		points, _ := strconv.Atoi(record[2][1:])
+		data = append(data, Scoreboard{Username: username, Category: category, Points: points})
 	}
 
 	return data

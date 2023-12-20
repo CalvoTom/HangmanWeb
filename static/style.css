@@ -180,14 +180,15 @@
   background-color : #39B8F8; 
   font-size: 30px;
   padding: 10px;
+  padding-right: 60px;
 }
 
-.contentUsername { 
+.contentDark { 
   background-color : #CED4E5;
   padding: 5px;
 }
 
-.contentPoints  { 
+.contentWhite  { 
   background-color : #E8EBF5;
   padding: 5px;
 }

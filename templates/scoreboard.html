@@ -3,14 +3,16 @@
     <thead>
         <tr>
             <th class="tableTitle">Username</th>
+            <th class="tableTitle">Category</th>
             <th class="tableTitle">Points</th>
         </tr>
     </thead>
     <tbody>
         {{range .}}
         <tr>
-            <td class="contentUsername">{{.Username}}</td>
-            <td class="contentPoints">{{.Points}}</td>
+            <td class="contentDark">{{.Username}}</td>
+            <td class="contentWhite">{{.Category}}</td>
+            <td class="contentDark">{{.Points}}</td>
         </tr>
         {{end}}
     </tbody>
