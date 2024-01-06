@@ -10,23 +10,14 @@
             <a class="title" href="http://localhost:8080">Hangman Web</a>
             <div class="header-right">
                 <a class="active" href="http://localhost:8080/estarting">Easy</a>
-                <a href="http://localhost:8080/medium">Medium</a>
+                <a href="http://localhost:8080/mstarting">Medium</a>
                 <a href="http://localhost:8080/hstarting">Hard</a>
             </div>
         </div>
 
-        {{template "hangman" .}}
-
-        <div class="inputBlock">
-            {{template "information" .}}
-            {{template "wordToFind" .}}
-            <div class="input">
-                <form id="inputForm" method="post" action="/hangman">
-                    <input name="input" class="Forms" type="text" value=""/>
-                </form>
-                
-                <button class="Button" type="submit" form="inputForm" value="Submit">Submit</button>
-            </div>
+        <div class="endscreen">
+            <h1 class="loosetext">Defeat !</h1>
+            <button class="Button loose" type="playAgain">Play again</button>
         </div>
     </body>
 </html>

@@ -9,24 +9,20 @@
         <div class="header">
             <a class="title" href="http://localhost:8080">Hangman Web</a>
             <div class="header-right">
-                <a class="active" href="http://localhost:8080/easy">Easy</a>
+                <a class="active" href="http://localhost:8080/estarting">Easy</a>
                 <a href="http://localhost:8080/mstarting">Medium</a>
                 <a href="http://localhost:8080/hstarting">Hard</a>
             </div>
         </div>
-
-        {{template "hangman" .}}
-
-        <div class="inputBlock">
-            {{template "information" .}}
-            {{template "wordToFind" .}}
+        
+        <div class="connectBlock">
+            <h1 id="mediumtxt">Medium</h1>
             <div class="input">
-                <form id="inputForm" method="post" action="/hangman">
-                    <input name="input" class="Forms" type="text" value=""/>
+                <form class="inputForm" method="post" action="/hangman">
+                    <input required name="username" class="Forms" type="text" value="" placeholder="Username"/>
                 </form>
                 
-                <button class="Button" type="submit" form="inputForm" value="Submit">Submit</button>
+                <a href="http://localhost:8080/medium"><button class="start-button" type="submit" form="inputForm" value="Submit">Start</button></a>
             </div>
         </div>
-    </body>
 </html>

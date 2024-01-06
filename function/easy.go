@@ -8,10 +8,11 @@ import (
 	hangman "github.com/CalvoTom/HangmanPackage"
 )
 
-func Easy(w http.ResponseWriter, r *http.Request, H *hangman.HangManData) {
+func Easy(w http.ResponseWriter, r *http.Request, Heasy *hangman.HangManData) {
 	template, err := template.ParseFiles("./pages/easy.html", "./templates/wordToFind.html", "./templates/information.html", "./templates/hangman.html")
 	if err != nil {
 		log.Fatal(err)
 	}
-	template.Execute(w, H)
+	log.Println(Heasy)
+	template.Execute(w, Heasy)
 }
