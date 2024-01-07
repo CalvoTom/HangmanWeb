@@ -4,7 +4,6 @@ import (
 	"encoding/csv"
 	"log"
 	"os"
-	"strconv"
 )
 
 func Save(data []Scoreboard) {
@@ -18,7 +17,7 @@ func Save(data []Scoreboard) {
 	defer writer.Flush()
 
 	for _, item := range data {
-		record := []string{item.Username, item.Category, strconv.Itoa(item.Points)}
+		record := []string{item.Username, item.Category, item.Points}
 		err := writer.Write(record)
 		if err != nil {
 			log.Println(err)

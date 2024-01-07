@@ -10,10 +10,17 @@
             <a class="title" href="http://localhost:8080">Hangman Web</a>
             <div class="header-right">
                 <a class="active" href="http://localhost:8080/estarting">Easy</a>
-                <a href="http://localhost:8080/mstarting">Medium</a>
-                <a href="http://localhost:8080/hstarting">Hard</a>
+                <a href="http://localhost:8080/hstarting">Medium</a>
+                <a href="http://localhost:8080/mstarting">Hard</a>
             </div>
         </div>
-        {{template "scoreboard" .}}
+
+        <div class="endscreen">
+            <h1 class="wintext">Victory !</h1>
+
+            <form id="container" method="post" action="/hangman">
+                <button name="playAgain" class="win-button" type="playAgain">Play again</button>
+            </form>
+        </div>
     </body>
 </html>

@@ -1,5 +1,5 @@
-github.com/CalvoTom/HangmanPackage v1.0.6-0.20231219160256-bdeb3628fe21 h1:HjZqLNkUhNgu3gLrKtCVCsJFSM3MWpgS0L7Xt/3T40Q=
-github.com/CalvoTom/HangmanPackage v1.0.6-0.20231219160256-bdeb3628fe21/go.mod h1:Ue6o27K3epfK/1HCS6IpLF/EonfPN4FF/SqWA7T8qQ0=
+github.com/CalvoTom/HangmanPackage v1.0.6-0.20231223153232-4333c359b97e h1:ls9GuAUGyCmYDyVvgnqZ5c/+vW7c8c3X2qafgZ1fVig=
+github.com/CalvoTom/HangmanPackage v1.0.6-0.20231223153232-4333c359b97e/go.mod h1:Ue6o27K3epfK/1HCS6IpLF/EonfPN4FF/SqWA7T8qQ0=
 github.com/mattn/go-runewidth v0.0.9/go.mod h1:H031xJmbD/WCDINGzjvQ9THkh0rPKHF+m2gUSrubnMI=
 github.com/mattn/go-runewidth v0.0.15 h1:UNAjwbU9l54TA3KzvqLGxwWjHmMgBUVhBiTjelZgg3U=
 github.com/mattn/go-runewidth v0.0.15/go.mod h1:Jdepj2loyihRzMpdS35Xk/zdY8IAYHsh153qUoGf23w=

@@ -14,6 +14,13 @@
                 <a href="http://localhost:8080/hstarting">Hard</a>
             </div>
         </div>
-        {{template "scoreboard" .}}
+
+        <div class="endscreen">
+            <h1 class="loosetext">Defeat !</h1>
+
+            <form id="container" method="post" action="/hangman">
+                <button name="playAgain" class="loose-button" type="playAgain">Play again</button>
+            </form>
+        </div>
     </body>
 </html>
