@@ -18,11 +18,10 @@
         <div class="connectBlock">
             <h1 id="hardtxt">Hard</h1>
             <div class="input">
-                <form class="inputForm" method="post" action="/hangman">
+                <form id="mstart" method="post" action="/hangman">
                     <input required name="username" class="Forms" type="text" value="" placeholder="Username"/>
                 </form>
-                
-                <a href="http://localhost:8080/hard"><button class="start-button" type="submit" form="inputForm" value="Submit">Start</button></a>
+                <button class="start-button" type="submit" form="mstart" value="Submit">Start</button>
             </div>
         </div>
 </html>

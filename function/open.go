@@ -4,7 +4,6 @@ import (
 	"encoding/csv"
 	"log"
 	"os"
-	"strconv"
 )
 
 func Open() []Scoreboard {
@@ -24,7 +23,7 @@ func Open() []Scoreboard {
 	for _, record := range records {
 		username := record[0]
 		category := record[1]
-		points, _ := strconv.Atoi(record[2][1:])
+		points := record[2]
 		data = append(data, Scoreboard{Username: username, Category: category, Points: points})
 	}
 

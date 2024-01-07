@@ -2,6 +2,7 @@ package main
 
 import (
 	hangmanweb "hangmanweb/function"
+	"log"
 	"net/http"
 
 	hangman "github.com/CalvoTom/HangmanPackage"
@@ -15,6 +16,7 @@ func main() {
 
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		scoreboardData := hangmanweb.Open()
+		log.Print()
 		hangmanweb.Home(w, r, scoreboardData)
 	})
 	http.HandleFunc("/hangman", func(w http.ResponseWriter, r *http.Request) {
@@ -39,7 +41,7 @@ func main() {
 		hangmanweb.Hard(w, r, Hhard)
 	})
 	http.HandleFunc("/victory", func(w http.ResponseWriter, r *http.Request) {
-		hangmanweb.Victory(w, r, userscore, Heasy, Hmedium, Hhard)
+		hangmanweb.Victory(w, r)
 	})
 	http.HandleFunc("/defeat", func(w http.ResponseWriter, r *http.Request) {
 		hangmanweb.Defeat(w, r)
