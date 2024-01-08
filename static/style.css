@@ -328,6 +328,45 @@
   margin-right: auto;
 }
 
+.cerisier{
+  width: 372px;
+  height: 445px;
+  object-fit: none;
+}
+
+.position-left{
+  margin-top: -114px;
+  margin-left: -55px;
+}
+.position-right{
+  transform: rotate(270deg);
+  margin-top: -107px;
+  float: right;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  width: 195px;
+  height: 5px;
+  margin-top: -20px;
+}
+  
+.bar { 
+  grid-area: 1 / 1 / 2 / 2; 
+  background-color: #39B8F8;
+}
+
+.tried{
+  width: fit-content;
+  height: fit-content;
+  margin-top: -700px;
+  margin-left: 50px;
+}
+
 *{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
