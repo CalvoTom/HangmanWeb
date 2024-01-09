@@ -2,7 +2,6 @@ package main
 
 import (
 	hangmanweb "hangmanweb/function"
-	"log"
 	"net/http"
 
 	hangman "github.com/CalvoTom/HangmanPackage"
@@ -15,8 +14,7 @@ func main() {
 	var Hhard *hangman.HangManData
 
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		scoreboardData := hangmanweb.Open()
-		log.Print()
+		scoreboardData := hangmanweb.OpenScoreboard()
 		hangmanweb.Home(w, r, scoreboardData)
 	})
 	http.HandleFunc("/hangman", func(w http.ResponseWriter, r *http.Request) {

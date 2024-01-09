@@ -34,6 +34,7 @@
   width: 300px;
   height: 35px;
   border-radius: 30px;
+  margin-top: 5px;
 }
   
 .Button {
@@ -198,6 +199,7 @@
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
+  animation: 0,1s scorboard-animation;
 }
 
 .wintext{
@@ -300,6 +302,7 @@
   height: fit-content;
   margin-left: auto;
   margin-right: auto;
+  animation: 1s arriver;
 }
 
 #mediumtxt{
@@ -313,6 +316,7 @@
   height: fit-content;
   margin-left: auto;
   margin-right: auto;
+  animation: 1s arriver;
 }
 
 #hardtxt{
@@ -326,6 +330,91 @@
   height: fit-content;
   margin-left: auto;
   margin-right: auto;
+  animation: 1s arriver;
+}
+
+.cerisier{
+  width: 372px;
+  height: 445px;
+  object-fit: none;
+}
+
+.position-left{
+  margin-top: -114px;
+  margin-left: -55px;
+  animation: 1s left-blossom-animation;
+}
+
+.position-right{
+  transform: rotate(270deg);
+  margin-top: -107px;
+  float: right;
+  animation: 1s right-blossom-animation;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  width: 195px;
+  height: 5px;
+  margin-top: -20px;
+}
+  
+.bar { 
+  grid-area: 1 / 1 / 2 / 2; 
+  background-color: #39B8F8;
+}
+
+.tried{
+  width: fit-content;
+  height: fit-content;
+  margin-top: -700px;
+  margin-left: 50px;
+}
+
+@keyframes arriver {
+  0%{
+    font-size: 0;
+  }
+  100%{
+    font-size: 100px;
+  }
+}
+
+@keyframes scorboard-animation {
+  0%{
+    margin-top: 0;
+    opacity: 50%;
+  }
+  100%{
+    margin-top: 50px;
+    opacity: 100%;
+  }
+}
+
+@keyframes right-blossom-animation {
+  0%{
+    margin-top: -97px;
+    opacity: 50%;
+  }
+  100%{
+    margin-top: -107px;
+    opacity: 100%;
+  }
+}
+
+@keyframes left-blossom-animation {
+  0%{
+    margin-top: -110px;
+    opacity: 50%;
+  }
+  70%{
+    margin-top: -114px;
+    opacity: 100%;
+  }
 }
 
 *{

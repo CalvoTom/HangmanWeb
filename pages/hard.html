@@ -11,7 +11,7 @@
             <div class="header-right">
                 <a class="active" href="http://localhost:8080/estarting">Easy</a>
                 <a href="http://localhost:8080/mstarting">Medium</a>
-                <a href="http://localhost:8080/hard">Hard</a>
+                <a href="http://localhost:8080/hstarting">Hard</a>
             </div>
         </div>
 
@@ -27,6 +27,14 @@
                 
                 <button class="Button" type="submit" form="inputForm" value="Submit">Submit</button>
             </div>
+        </div>
+
+        <div class="tried">
+            <h1 class="title">Letters Tried</h1>
+            <div class="grid">
+                <div class="bar"></div>
+            </div>
+            {{template "lettersTried" .}}
         </div>
     </body>
 </html>

@@ -8,10 +8,10 @@ import (
 	hangman "github.com/CalvoTom/HangmanPackage"
 )
 
-func Hard(w http.ResponseWriter, r *http.Request, H *hangman.HangManData) {
-	template, err := template.ParseFiles("./pages/hard.html", "./templates/wordToFind.html", "./templates/information.html", "./templates/hangman.html")
+func Hard(w http.ResponseWriter, r *http.Request, Hhard *hangman.HangManData) {
+	template, err := template.ParseFiles("./pages/hard.html", "./templates/wordToFind.html", "./templates/information.html", "./templates/hangman.html", "./templates/lettersTried.html")
 	if err != nil {
 		log.Fatal(err)
 	}
-	template.Execute(w, H)
+	template.Execute(w, Hhard)
 }
