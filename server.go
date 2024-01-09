@@ -14,7 +14,7 @@ func main() {
 	var Hhard *hangman.HangManData
 
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		scoreboardData := hangmanweb.Open()
+		scoreboardData := hangmanweb.OpenScoreboard()
 		hangmanweb.Home(w, r, scoreboardData)
 	})
 	http.HandleFunc("/hangman", func(w http.ResponseWriter, r *http.Request) {

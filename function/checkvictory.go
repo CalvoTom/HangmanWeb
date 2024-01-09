@@ -9,14 +9,14 @@ import (
 func CheckVictory(w http.ResponseWriter, r *http.Request, H *hangman.HangManData, userscore *Scoreboard) {
 	var tabscore []Scoreboard
 	if H.Word == H.ToFind {
-		userscore.Points = string(CalculateScore(H))
+		userscore.Points = CalculateScore(H)
 		tabscore = append(tabscore, *userscore)
-		Save(tabscore)
+		SaveScoreboard(tabscore)
 		http.Redirect(w, r, "http://localhost:8080/victory", http.StatusFound)
 	} else if H.Attempts == 0 {
-		userscore.Points = "Loose"
+		userscore.Points = 0
 		tabscore = append(tabscore, *userscore)
-		Save(tabscore)
+		SaveScoreboard(tabscore)
 		http.Redirect(w, r, "http://localhost:8080/defeat", http.StatusFound)
 	}
 }

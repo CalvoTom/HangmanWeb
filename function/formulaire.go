@@ -10,21 +10,27 @@ import (
 type Scoreboard struct {
 	Username string
 	Category string
-	Points   string
+	Points   int
+}
+
+type Account struct {
+	Username string
+	Email    string
+	Password string
 }
 
 func Formulaire(w http.ResponseWriter, r *http.Request, Heasy *hangman.HangManData, Hmedium *hangman.HangManData, Hhard *hangman.HangManData, userscore *Scoreboard) {
 	if err := r.ParseForm(); err != nil {
 		log.Fatal(err)
 	}
+	log.Println(r.Form)
 	for key, _ := range r.Form {
 		if key == "playAgain" {
 			playAgain(w, r, userscore)
-		} else {
-			usernameCheckeur(w, r, userscore)
-			gameCheckeur(w, r, Heasy, Hmedium, Hhard, userscore)
 		}
 	}
+	usernameCheckeur(w, r, userscore)
+	gameCheckeur(w, r, Heasy, Hmedium, Hhard, userscore)
 
 	http.Redirect(w, r, r.Header.Get("Referer"), http.StatusFound)
 }
