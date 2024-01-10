@@ -9,19 +9,25 @@
         <div class="header">
             <a class="title" href="http://localhost:8080">Hangman Web</a>
             <div class="header-right">
-                <a class="active" href="http://localhost:8080/estarting">Easy</a>
-                <a href="http://localhost:8080/mstarting">Medium</a>
-                <a href="http://localhost:8080/hstarting">Hard</a>
+                <a class="active" href="http://localhost:8080/easy">Easy</a>
+                <a href="http://localhost:8080/medium">Medium</a>
+                <a href="http://localhost:8080/hard">Hard</a>
             </div>
         </div>
     
         <div class="connectBlock">
-            <h1 id="easytxt">Easy</h1>
+            <h1 class="log-sign">Login</h1>
             <div class="input">
                 <form id="estart" method="post" action="/hangman">
-                    <input required name="username" class="Forms" type="text" value="" placeholder="Username"/>
+                    <input required name="email-log" class="Forms" type="text" value="" placeholder="E-mail"/>
+                    <br>
+                    <input required name="password-log" class="Forms" type="password" value="" placeholder="Password"/>
                 </form>
                 <button class="start-button" type="submit" form="estart" value="Submit">Start</button>
             </div>
         </div>
+
+        <form class="input" id="signin" method="post" action="/hangman">
+            <button name="signin" class="Button" type="signin">Signin</button>
+        </form>
 </html>

@@ -25,3 +25,22 @@ func SaveScoreboard(data []Scoreboard) {
 		}
 	}
 }
+
+func SaveAccount(data []Account) {
+	file, err := os.OpenFile("account.csv", os.O_WRONLY|os.O_CREATE|os.O_APPEND, 0644)
+	if err != nil {
+		log.Println(err)
+	}
+	defer file.Close()
+
+	writer := csv.NewWriter(file)
+	defer writer.Flush()
+
+	for _, item := range data {
+		record := []string{item.Username, item.Email, item.Password}
+		err := writer.Write(record)
+		if err != nil {
+			log.Println(err)
+		}
+	}
+}
