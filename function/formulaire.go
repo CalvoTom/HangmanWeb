@@ -30,6 +30,8 @@ func Formulaire(w http.ResponseWriter, r *http.Request, Heasy *hangman.HangManDa
 
 		} else if key == "signin" {
 			http.Redirect(w, r, "http://localhost:8080/signin?level="+level, http.StatusFound)
+		} else if key == "login" {
+			http.Redirect(w, r, "http://localhost:8080/login?level="+level, http.StatusFound)
 		} else if key == "username-sign" {
 			newUsername := r.FormValue("username-sign")
 			newEmail := r.FormValue("email-sign")
@@ -38,7 +40,6 @@ func Formulaire(w http.ResponseWriter, r *http.Request, Heasy *hangman.HangManDa
 			if singIn(w, r, newUsername, newEmail, userscore) {
 				var listeNewAccount []Account
 				userscore.Username = newUsername
-				newPassword = Encrypt(newPassword)
 				listeNewAccount = append(listeNewAccount, Account{Username: newUsername, Email: newEmail, Password: newPassword})
 
 				SaveAccount(listeNewAccount)
@@ -88,7 +89,7 @@ func logIn(w http.ResponseWriter, r *http.Request, email string, password string
 	listeAccount := OpenAccount()
 
 	for i := 0; i < len(listeAccount); i++ {
-		if listeAccount[i].Email == email && listeAccount[i].Password == Encrypt(password) {
+		if listeAccount[i].Email == email && listeAccount[i].Password == password {
 			userscore.Username = listeAccount[i].Username
 			return true
 		}

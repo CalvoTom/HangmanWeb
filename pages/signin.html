@@ -16,7 +16,7 @@
         </div>
     
         <div class="connectBlock">
-            <h1 id="easytxt">Signin</h1>
+            <h1 class="log-sign">Signin</h1>
             <div class="input">
                 <form id="estart" method="post" action="/hangman">
                     <input required name="username-sign" class="Forms" type="text" value="" placeholder="Username"/>
@@ -28,4 +28,8 @@
                 <button class="start-button" type="submit" form="estart" value="Submit">Start</button>
             </div>
         </div>
+
+        <form  class="input" id="login" method="post" action="/hangman">
+            <button name="login" class="Button" type="login">Login</button>
+        </form>
 </html>
