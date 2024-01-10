@@ -14,27 +14,18 @@
                 <a href="http://localhost:8080/hard">Hard</a>
             </div>
         </div>
-
-        {{template "hangman" .}}
-
-        <div class="inputBlock">
-            {{template "information" .}}
-            {{template "wordToFind" .}}
+    
+        <div class="connectBlock">
+            <h1 id="easytxt">Signin</h1>
             <div class="input">
-                <form id="inputForm" method="post" action="/hangman">
-                    <input name="input" class="Forms" type="text" value=""/>
+                <form id="estart" method="post" action="/hangman">
+                    <input required name="username-sign" class="Forms" type="text" value="" placeholder="Username"/>
+                    <br>
+                    <input required name="email-sign" class="Forms" type="text" value="" placeholder="E-mail"/>
+                    <br>
+                    <input required name="password-sign" class="Forms" type="password" value="" placeholder="Password"/>
                 </form>
-                
-                <button class="Button" type="submit" form="inputForm" value="Submit">Submit</button>
+                <button class="start-button" type="submit" form="estart" value="Submit">Start</button>
             </div>
         </div>
-
-        <div class="tried">
-            <h1 class="title">Letters Tried</h1>
-            <div class="grid">
-                <div class="bar"></div>
-            </div>
-            {{template "lettersTried" .}}
-        </div>
-    </body>
 </html>

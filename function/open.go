@@ -46,3 +46,30 @@ func OpenScoreboard() []Scoreboard {
 
 	return data
 }
+
+func OpenAccount() []Account {
+	file, err := os.Open("account.csv")
+	if err != nil {
+		log.Println(err)
+	}
+	defer file.Close()
+
+	reader := csv.NewReader(file)
+	records, err := reader.ReadAll()
+	if err != nil {
+		log.Println(err)
+	}
+
+	var data []Account
+	for _, record := range records {
+		username := record[0]
+		email := record[1]
+		password := record[2]
+		if err != nil {
+			log.Fatal(err)
+		}
+		data = append(data, Account{Username: username, Email: email, Password: password})
+	}
+
+	return data
+}
